@@ -113,8 +113,6 @@ public class SwiftMicStreamPlugin: NSObject, FlutterStreamHandler, FlutterPlugin
                 
                 try audioCaptureDevice.lockForConfiguration()
 
-                try audioSession.setCategory(AVAudioSession.Category.record,mode: .measurement)
-
                 try audioSession.setPreferredSampleRate(Double(SAMPLE_RATE))
 
                 //Calculate the time required for BufferSize
